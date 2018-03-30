@@ -1,0 +1,39 @@
+pre {
+    font-size: 20px;
+    max-width: 345px !important;
+
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+span.docinfo, div {
+    background-color: black;
+    color: white;
+    max-width: 345px !important;
+}
+
+a {
+    color: #1E90FF
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a.selflink {
+    max-width: 345px !important;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    line-height: 20px;
+    color: white;
+}
+
+hr {
+    width: 345px !important;
+}

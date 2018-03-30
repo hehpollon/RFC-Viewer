@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="7dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_home_src" />
+
+        <TextView
+            android:id="@+id/tv_rfcnum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="RFC #"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/btn_bookmark"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="7dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_bookmark_src" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical">
+
+        <WebView
+            android:id="@+id/wb_main"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_mode"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#343434"
+        android:text="N"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

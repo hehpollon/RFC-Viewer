@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="@string/title"
+        android:textColor="@color/indigo"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_rfcnum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="@string/input_hint"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_rfcnum"
+        android:layout_alignStart="@+id/et_rfcnum"
+        android:layout_below="@+id/et_rfcnum"
+        android:layout_marginTop="31dp"
+        android:text="@string/button_next"
+        android:textColor="@color/white"
+        android:theme="@style/GoButton" />
+
+    <Spinner
+        android:id="@+id/sp_bookmark"
+        style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_go"
+        android:layout_below="@+id/btn_go"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/sp_bookmark"
+        android:layout_toStartOf="@+id/sp_bookmark"
+        android:background="@drawable/btn_bookmark_red" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_bookmark"
+        android:layout_alignStart="@+id/tv_title"
+        android:text="My Bookmark"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
