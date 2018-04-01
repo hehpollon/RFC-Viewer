@@ -1,4 +1,5 @@
 # RFC-Viewer
+<a href="https://play.google.com/store/apps/details?id=com.redratel.rfc.viewer"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height=70px /></a>
 ## About
 RFC Viewer for android <br>
 ## Features
