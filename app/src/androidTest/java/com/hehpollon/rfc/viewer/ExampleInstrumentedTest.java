@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.signkorea.myapplication", appContext.getPackageName());
+        assertEquals("com.hehpollon.rfc.viewer", appContext.getPackageName());
     }
 }
